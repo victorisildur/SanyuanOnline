@@ -69,7 +69,7 @@
 			<form role="form" style="margin-top:5px">
 				<div class="row">
 					<div class="col-xs-2" style="padding-right:0px">
-						<img src="../static/fonts/glyphicons/png/glyphicons_003_user.png" style="width:100%">
+						<img src="../static/fonts/glyphicons/png/glyphicons_003_user.png" style="width:100%;padding-top:15px;">
 					</div>
 					<div class="col-xs-10">
 						<div class="form-group">					
@@ -79,17 +79,15 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-8">
-					</div>
-					<div class="col-xs-4">
-						<button type="submit" class="btn btn-info">提交</button>
+					<div class="col-xs-12">
+						<button type="submit" class="btn btn-info middle" style="width:80%;display:block">提交</button>
 					</div>
 				</div>
 			</form>
 		</div>
 	</div>
-	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-	<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="../static/js/jquery.min.js"></script>
+	<script src="../static/js/bootstrap.min.js"></script>
 	
 </body>
 </html>
