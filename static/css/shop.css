@@ -2,12 +2,10 @@ body{
 	background-color:#f9f7f7;
 }
 .show_box {
-	border-color:#ccc;
-	border-width:1px;
 	border-radius:5px;
-	border-style:solid;
 	background-color:white;
 	padding:10px;
+	margin-bottom:6px;
 }
 .img_col{
 	padding:5px;
@@ -18,6 +16,16 @@ body{
 .img_last_col{
 	padding-right:5px;
 }
-.shop_circle{	
+.shop_circle{
 	height:auto;
+}
+.middle{
+	margin-left:auto;
+	margin-right:auto;
+}
+a p{
+	color:gray;
+}
+pre {
+	border-color:white;
 }

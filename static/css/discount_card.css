@@ -1,0 +1,28 @@
+#card_background{
+	background-image: url(../img/background.png);
+	background-repeat: repeat-x;
+	position:relative;
+	margin-bottom:0px;
+}
+#card_box{
+	position:relative;
+	top:30px;
+	width:90%;
+	margin-bottom:35px;
+}
+#card_info1{
+	position:absolute;
+	top:37px;
+	left:90px;
+}
+#card_info2{
+	position:absolute;
+	top:65px;
+	left:90px;
+}
+#card_info3{
+	position:absolute;
+	top:125px;
+	left:80px;
+	color:white;
+}

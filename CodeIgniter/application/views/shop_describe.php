@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Welcome to CodeIgniter</title>
+	<title>海底捞火锅</title>
 	<link rel="stylesheet" href="../static/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../static/css/shop.css">
 </head>
@@ -42,18 +42,26 @@
 			<p>人被信任了，才会有责任感。而信任的唯一标志就是授权—海底捞给予火锅店的普通员工物质回报，还给他们“信任”与“授权”，让他们一同收获幸福感和成就感。</p>
 			
 			<img src="../static/img/hotpot.jpg" class="img-responsive img-rounded">			
-		</div>		
+		</div>	
+
+		<div class="show_box">
+			<pre>味道不错！</pre>
+			<pre>服务好</pre>
+			<pre>汤料够辣</pre>
+			<pre>和朋友吃，人均50</pre>
+		</div>
+		<!--提交评论-->
 		<div class="show_box">
 			<div class="btn-group btn-group-justified">
 				<div class="btn-group">
 					<button type="button" class="btn btn-default  ">
-						<img src="../static/fonts/glyphicons/png/glyphicons_001_leaf.png" > 发送给朋友
+						<img src="../static/fonts/glyphicons/png/glyphicons_010_envelope.png" style="width:15px"> 发送给朋友
 					</button>
 				</div>
 				
 				<div class="btn-group">
 					<button type="button" class="btn btn-default ">
-						<img src="../static/fonts/glyphicons/png/glyphicons_001_leaf.png" > 分享到朋友圈
+						<img src="../static/fonts/glyphicons/png/glyphicons_001_leaf.png" style="width:15px"> 分享到朋友圈
 					</button>
 				</div>
 			</div>
