@@ -32,7 +32,7 @@
 							<li><a href="#">电话</a></li>						
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="../welcome">返回首页</a></li>						
+							<li><a href="../index.php/welcome">返回首页</a></li>						
 						</ul>
 					</div>
 				</div>
