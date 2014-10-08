@@ -1,11 +1,10 @@
 <?php
 if (!defined('BASEPATH')) exit('No direct script access allowed');
-class Coupon_Model extends MY_Model
+class Coupon_Model extends CI_Model
 {
-
     public function __construct()
     {
-        parent::__construct();
+        $this->load->database();
     }
 
     public function AddCoupon($info)
@@ -29,13 +28,19 @@ class Coupon_Model extends MY_Model
         return $query->row();
     }
 
-    public function GetShopCoupon($shop_id)
+    public function GetShopCoupon($shop_id, $all=0)
     {
-        $query = $this->db->get_where('coupon', array('shop_id' => $shop_id));
+        $sql = "select * from coupon where shop_id = ? ";
+        if(!$all)
+        {
+            $sql .= "and end_time > NOW() ";
+        }
+        $sql .= "order by add_time desc";
+        $query = $this->db->query($sql, array($shop_id));
         return $query->result();
     }
 
-    public function GetShopCouponList($num=10, $from=0)
+    public function GetLatestCoupon($num=10, $from=0)
     {
         $this->db->order_by("add_time", "desc");
         $query = $this->db->get('coupon', $num, $from);
