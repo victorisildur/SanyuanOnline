@@ -9,7 +9,7 @@ class Shop_Model extends CI_Model
 
     public function AddShop($info)
     {
-        $this->db->insert('shop', $info);
+        return $this->db->insert('shop', $info);
     }
 
     public function EditShop($shop_id, $info)
@@ -21,13 +21,13 @@ class Shop_Model extends CI_Model
     {
         $this->db->delete('shop', array('shop_id' => $shop_id));
     }
-//获取数据库中所有信息
+	//获取数据库中所有信息
     public function GetDetail($shop_id)
     {
         $query = $this->db->get_where('shop', array('shop_id' => $shop_id));
         return $query->row();
     }
-//获取必要信息用于首页和优惠券
+	//获取必要信息用于首页和优惠券
     public function GetBasic($shop_id)
     {
         $this->db->select('shop_id, shop_name, shop_addr, shop_tel, shop_img');

@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Shop extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -24,32 +24,35 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{		
-        $this->load->model('Shop_Model','shop');
-        $this->load->model('Coupon_Model','coupon');        
-		$data['hot_shops'] = $this->shop->GetHotShopList();;        
-		$this->load->view('fame_shop',$data);
+        $this->load->model('Shop_Model','shop');    
+		$data['hot_shops'] = $this->shop->GetHotShopList();
+		$data['new_shops'] = $this->shop->GetNewShopList();
+		$this->load->view('shops_all',$data);
 	}
 
     public function detail($shop_id)
     {
         $this->load->model('Shop_Model','shop');
         $this->load->model('Comment_Model','comment');
-        $this->shop->GetDetail($shop_id);
-        $this->comment->GetComments($shop_id);
+		$data['shop_id'] = $shop_id;
+        $data['details'] = $this->shop->GetDetail($shop_id);
+        $data['comments'] = $this->comment->GetComments($shop_id);
+		$this->load->view('shop_detail',$data);
     }
-
-    //public function coupon
-    public function coupon($coupon_id)
+	
+	public function addComment()
     {
-        $this->load->model('Coupon_Model','coupon');
-        $this->coupon->GetDetail($coupon_id);
+		//encode post data into an array
+		$comment = array('comment_content' => $this->input->post('comment_content'),
+						 'shop_id'         => $this->input->post('shop_id'),
+						 'comment_time'    => date("Y-m-d H:i:s")
+						);
+		//call Comment_Model's method
+		$this->load->Model('Comment_Model','comment_model');
+		return $this->comment_model->AddComment($comment);
+		echo json_encode(array('status'=>'ok'));
     }
-
-    public function shop_coupon($shop_id)
-    {
-        $this->load->model('Coupon_Model','coupon');
-        $this->coupon->GetShopCoupon($shop_id);
-    }
+    
 }
 
 /* End of file welcome.php */

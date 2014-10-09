@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>知名老店</title>
+	<title>优惠券</title>
 	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/static/css/shop.css">
 </head>
@@ -14,29 +14,28 @@
 		<img src="../static/img/weixin_header.png" class="img-responsive">
 	</div>
 	<div class="container">
-		<!--热门-->
-		<h4><strong>热门</strong></h4>
+		<!---->
+		<h4><strong>最新优惠券</strong></h4>
 		<div class="show_box">
 			<div class="row">
 				<?php 
-					$shop_count = count($hot_shops);
-					for( $x=0; $x<$shop_count; $x++):
+					$count = count($coupons);
+					echo "#coupons:".$count;
+					if( $count > 4) {
+						$count = 4;
+					}
+					for( $x=0; $x<$count; $x++) :
 				?>
 				<div class="col-xs-3 img_col">
-					<img src= <?=$hot_shops[$x]->shop_img?> class='img-circle img-responsive shop_circle'>
-					<p class='text-center'><small> <?=$hot_shops[$x]->shop_name?></small></p>
+					<a href="/index.php/coupon/coupon_detail/<?=$coupons[$x]->coupon_id?>">
+					<?= $coupons[$x]->coupon_content ?>
+					</a>
+				</div>
 				<?php 
-					endfor 
+					endfor	
 				?>
 			</div>
 			
-		</div>
-		<!--新店-->
-		<h4><strong>新店</strong></h4>
-		<div class="show_box">
-			<div class="row">
-				
-			</div>
 		</div>
 	</div>
 </body>
