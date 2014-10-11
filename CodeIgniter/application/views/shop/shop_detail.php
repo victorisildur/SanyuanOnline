@@ -30,7 +30,7 @@
 						<li><a href="#">电话</a></li>						
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="../index.php/shop">返回首页</a></li>						
+						<li><a href="/index.php/shop/old_shops">返回首页</a></li>						
 					</ul>
 				</div>
 			</div>
@@ -42,7 +42,7 @@
 		</div>	
 
 		<!--comment display box-->
-		<div class="show_box">
+		<div class="show_box" id="comment_div">
 			<?php 
 				foreach($comments as $comment) :
 			?>
@@ -75,7 +75,7 @@
 					</div>
 					<div class="col-xs-10">
 						<div class="form-group">					
-							<input rows="3" class="form-control" id="comment_content" placeholder="说几句吧">								
+							<input class="form-control" id="comment_content" placeholder="说几句吧">								
 							</input>
 						</div>
 					</div>

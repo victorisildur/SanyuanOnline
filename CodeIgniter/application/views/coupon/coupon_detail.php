@@ -33,7 +33,7 @@
 							<li><a href="#">电话</a></li>						
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="/index.php/coupon">返回首页</a></li>						
+							<li><a href="/index.php/coupon/food_coupon">返回首页</a></li>						
 						</ul>
 					</div>
 				</div>
@@ -43,9 +43,9 @@
 		<div id="card_background">
 			<div id="card_box" class="middle">
 				<img src="/static/img/common_card.png" class="img-responsive" id="my_card">
-				<p id="card_info1" class="middle"><strong><?=$coupon->shop_addr?></strong></p>
-				<p id="card_info2" class="middle"><strong><?=$coupon->shop_tel?></strong></p>
-				<p id="card_info3" class="middle"><strong><?=$coupon->shop_services?></strong></p>
+				<p id="card_addr" class="middle"><strong><?=$coupon->shop_addr?></strong></p>
+				<p id="card_tel" class="middle"><strong><?=$coupon->shop_tel?></strong></p>
+				<p id="card_services" class="middle"><strong><?=$coupon->shop_services?></strong></p>
 			</div>
 		</div>
 		

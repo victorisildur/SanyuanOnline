@@ -1,0 +1,111 @@
+<NotepadPlus>
+    <Project name="sy">
+        <Folder name="cache">
+            <File name="CodeIgniter\application\cache\.htaccess" />
+            <File name="CodeIgniter\application\cache\index.html" />
+        </Folder>
+        <Folder name="config">
+            <File name="CodeIgniter\application\config\autoload.php" />
+            <File name="CodeIgniter\application\config\config.php" />
+            <File name="CodeIgniter\application\config\constants.php" />
+            <File name="CodeIgniter\application\config\database.php" />
+            <File name="CodeIgniter\application\config\doctypes.php" />
+            <File name="CodeIgniter\application\config\foreign_chars.php" />
+            <File name="CodeIgniter\application\config\hooks.php" />
+            <File name="CodeIgniter\application\config\index.html" />
+            <File name="CodeIgniter\application\config\migration.php" />
+            <File name="CodeIgniter\application\config\mimes.php" />
+            <File name="CodeIgniter\application\config\profiler.php" />
+            <File name="CodeIgniter\application\config\routes.php" />
+            <File name="CodeIgniter\application\config\smileys.php" />
+            <File name="CodeIgniter\application\config\user_agents.php" />
+        </Folder>
+        <Folder name="controllers">
+            <File name="CodeIgniter\application\controllers\admin.php" />
+            <File name="CodeIgniter\application\controllers\coupon.php" />
+            <File name="CodeIgniter\application\controllers\index.html" />
+            <File name="CodeIgniter\application\controllers\leaflet.php" />
+            <File name="CodeIgniter\application\controllers\shop.php" />
+        </Folder>
+        <Folder name="core">
+            <File name="CodeIgniter\application\core\index.html" />
+        </Folder>
+        <Folder name="errors">
+            <File name="CodeIgniter\application\errors\error_404.php" />
+            <File name="CodeIgniter\application\errors\error_db.php" />
+            <File name="CodeIgniter\application\errors\error_general.php" />
+            <File name="CodeIgniter\application\errors\error_php.php" />
+            <File name="CodeIgniter\application\errors\index.html" />
+        </Folder>
+        <Folder name="helpers">
+            <File name="CodeIgniter\application\helpers\index.html" />
+        </Folder>
+        <Folder name="hooks">
+            <File name="CodeIgniter\application\hooks\index.html" />
+        </Folder>
+        <Folder name="language">
+            <Folder name="english">
+                <File name="CodeIgniter\application\language\english\index.html" />
+            </Folder>
+            <File name="CodeIgniter\application\language\index.html" />
+        </Folder>
+        <Folder name="libraries">
+            <File name="CodeIgniter\application\libraries\index.html" />
+        </Folder>
+        <Folder name="logs">
+            <File name="CodeIgniter\application\logs\index.html" />
+        </Folder>
+        <Folder name="models">
+            <File name="CodeIgniter\application\models\Comment_model.php" />
+            <File name="CodeIgniter\application\models\Coupon_model.php" />
+            <File name="CodeIgniter\application\models\index.html" />
+            <File name="CodeIgniter\application\models\Leaflet_model.php" />
+            <File name="CodeIgniter\application\models\Shop_model.php" />
+        </Folder>
+        <Folder name="third_party">
+            <File name="CodeIgniter\application\third_party\index.html" />
+        </Folder>
+        <Folder name="views">
+            <Folder name="admin">
+                <File name="CodeIgniter\application\views\admin\admin_coupon.php" />
+                <File name="CodeIgniter\application\views\admin\admin_coupon_edit.php" />
+                <File name="CodeIgniter\application\views\admin\admin_shop.php" />
+                <File name="CodeIgniter\application\views\admin\footer_admin.php" />
+                <File name="CodeIgniter\application\views\admin\header_admin.php" />
+                <File name="CodeIgniter\application\views\admin\admin_leaflet.php" />
+                <File name="CodeIgniter\application\views\admin\admin_shop_intro.php" />
+                <File name="CodeIgniter\application\views\admin\admin_shop_editshopimg.php" />
+                <File name="CodeIgniter\application\views\admin\admin_shop_addshop.php" />
+                <File name="CodeIgniter\application\views\admin\admin_shop_editshop.php" />
+                <File name="CodeIgniter\application\views\admin\admin_coupon_add.php" />
+                <File name="CodeIgniter\application\views\admin\admin_leaflet_edit.php" />
+                <File name="CodeIgniter\application\views\admin\admin_leaflet_add.php" />
+                <File name="CodeIgniter\application\views\admin\admin_shop_comments.php" />
+            </Folder>
+            <Folder name="coupon">
+                <File name="CodeIgniter\application\views\coupon\coupons_all.php" />
+                <File name="CodeIgniter\application\views\coupon\coupon_detail.php" />
+            </Folder>
+            <Folder name="leaflet">
+                <File name="CodeIgniter\application\views\leaflet\footer_detail_leaflet.php" />
+                <File name="CodeIgniter\application\views\leaflet\header_detail_leaflet.php" />
+                <File name="CodeIgniter\application\views\leaflet\leaflet_all.php" />
+                <File name="CodeIgniter\application\views\leaflet\leaflet_detail.php" />
+            </Folder>
+            <Folder name="shop">
+                <File name="CodeIgniter\application\views\shop\shops_all.php" />
+                <File name="CodeIgniter\application\views\shop\shop_detail.php" />
+            </Folder>
+            <Folder name="staticSample">
+                <File name="CodeIgniter\application\views\staticSample\discount_card.php" />
+                <File name="CodeIgniter\application\views\staticSample\fame_shop.php" />
+                <File name="CodeIgniter\application\views\staticSample\shop_describe.php" />
+            </Folder>
+            <File name="CodeIgniter\application\views\footer_all.php" />
+            <File name="CodeIgniter\application\views\header_all.php" />
+            <File name="CodeIgniter\application\views\index.html" />
+        </Folder>
+        <File name="CodeIgniter\application\.htaccess" />
+        <File name="CodeIgniter\application\index.html" />
+    </Project>
+</NotepadPlus>
